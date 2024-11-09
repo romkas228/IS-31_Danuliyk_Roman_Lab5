@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Календар</title>
+  <link rel="stylesheet" href="./css.css">
+  
+</head>
+<body>
+  <div class="calendar-container">
+    <input type="text" id="dateInput" readonly placeholder="Виберіть дату" onclick="toggleCalendar()" />
+    <div id="calendar" class="calendar">
+      <div class="calendar-header">
+        <button onclick="prevYear()">«</button>
+        <button onclick="prevMonth()">‹</button>
+        <span id="monthYearDisplay"></span>
+        <button onclick="nextMonth()">›</button>
+        <button onclick="nextYear()">»</button>
+      </div>
+      <div class="calendar-body">
+        <div class="calendar-days">
+          <span>Нд</span><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span>
+        </div>
+        <div id="daysContainer" class="calendar-dates"></div>
+      </div>
+      <div class="calendar-footer">
+        <button onclick="clearDate()">Скасувати</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

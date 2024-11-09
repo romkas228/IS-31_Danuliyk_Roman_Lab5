@@ -1,0 +1,19 @@
+
+
+#menu{
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 5px;
+
+}
+#menu li{
+    border: 1px solid azure;
+    border-radius: 5px;
+    background-color: azure;
+    
+}
+
